@@ -6,7 +6,7 @@ class APIController {
     getAllUrl = async (_req, res) => {
         try {
             const allUrl = await this.APIService.getUrlIds()
-            if (allUrl) {
+            if (allUrl.length > 0) {
                 res.json({
                     allUrl
                 })   
@@ -49,13 +49,13 @@ class APIController {
                 const {long_url} = await this.APIService.getLongUrlById(id)
 
                 if (long_url) {
-                    res.location(long_url).json({long_url})
+                    res.redirect(301, long_url)
                 } else {
                     res.status(404).json({ msg: `The url is not found.` })
                 }
 
             } else {
-                res.status(400).json({ msg: `url does not exist.` })
+                res.status(400).json({ msg: `Please enter an id.` })
             }
 
         } catch (err) {

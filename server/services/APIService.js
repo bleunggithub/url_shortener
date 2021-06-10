@@ -43,7 +43,7 @@ class APIService {
                 .select('long_url')
                 .where({ url_id })
             
-            return result[0]
+            return result[0] || {long_url: null}
         } catch (err) {
             throw new Error(err)
         }

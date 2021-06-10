@@ -32,7 +32,7 @@ export const Input = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} data-testid="inputComponent">
                 <input
                     type="text"
                     value={url}

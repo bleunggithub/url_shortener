@@ -22,7 +22,7 @@ export const DisplayResults = () => {
     })
     
     return (
-        <main className="display-results-container">
+        <main className="display-results-container" data-testid="displayResults">
             <p style={{minHeight: '1.5rem'}}>
                         {copied && (<span className="highlighted-text">Copied to clipboard</span>)}
             </p>
