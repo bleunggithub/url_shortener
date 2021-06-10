@@ -1,0 +1,15 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background: linear-gradient(to top, #ff474799 30%, transparent 30%);
+}

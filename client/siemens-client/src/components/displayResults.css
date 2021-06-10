@@ -1,0 +1,40 @@
+.display-results-container {
+	width: 100%;
+	margin: 2rem auto;
+	text-align: center;
+}
+
+.table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+th {
+	padding: 1rem 0.25rem;
+	border-bottom: 1px solid #808080;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+td {
+	padding: 1rem 0.25rem;
+}
+
+.url-textbox {
+	min-height: 2rem;
+	min-width: 400px;
+	padding: 5px;
+	border: 1px solid #333;
+}
+
+.textbox-small {
+	min-width: 250px;
+}
+
+.highlighted-text {
+	background: linear-gradient(to top, #ff474799 60%, transparent 60%);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 0 5px;
+}
