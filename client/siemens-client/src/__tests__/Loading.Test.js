@@ -45,19 +45,20 @@ describe("Home page", () => {
     })
 
     it('redirects when data is returned', async () => {
-
-        const mockAxiosValue = {
-            request: {
-                responseURL: "http://www.bbc.co.uk"
-            }
-        }
         const mockProps = {
             params: {
                 id: 'i_am_an_id'
             }
         }
 
-        getRedirect.mockResolvedValue(mockAxiosValue)
+        Object.defineProperty(window, 'location', {
+            writable: true,
+            value: { assign: jest.fn() }
+        });
+
+        const mockRedirectUrl = "http://www.bbc.co.uk"
+
+        getRedirect.mockResolvedValue(mockRedirectUrl)
 
         
         render(
@@ -67,8 +68,8 @@ describe("Home page", () => {
         )
 
         await waitFor(() => expect(jest.spyOn(window.location, 'assign')
-            .mockImplementation(l => {
-                expect(l).toEqual(process.env.REACT_APP_DOMAIN)
+            .mockImplementation(url => {
+                expect(url).toEqual(mockRedirectUrl)
             }))
         )
     })
