@@ -1,4 +1,4 @@
-# InstaPic
+# URL Shortener
 
 - DATE STARTED: 8 JUNE 2021
 
