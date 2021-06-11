@@ -7,9 +7,12 @@
 
 #### Table of Content
 
-[Introduction](#introduction)
-[Approach](#approach)
-[Business Outcome](#business-outcome)
+[Introduction](#introduction) 
+
+[Approach](#approach) 
+
+[Business Outcome](#business-outcome) 
+
 
 #### Introduction
 
