@@ -3,9 +3,13 @@
 #### Table of Content
 
 [Installation](#installation)
+
 [How to run](#how-to-run)
+
 [Environment Variables](#environment-variables)
+
 [Tests](#tests)
+
 
 #### Installation
 

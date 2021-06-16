@@ -1,13 +1,15 @@
-####Routes
-
 # Url Shortener
 
 #### Table of Content
 
-[Installation](#installation)
-[How to run](#how-to-run)
+[Installation](#installation) 
+
+[How to run](#how-to-run) 
+
 [Environment Variables](#environment-variables)
+
 [About the API](#about-the-api)
+
 [Tests](#tests)
 
 #### Installation
@@ -29,18 +31,9 @@
 
 #### Environment Variables
 
-- create a .env file and add the following environment variables with your own value
-  - NODE_ENV=
-  - PG_DATABASE=
-  - PG_USERNAME=
-  - PG_PASSWORD=
-  - PG_TEST_DATABASE=
-  - JWT_TOKEN_SECRET=
-  - JWT_REFRESH_TOKEN_SECRET=
-  - CLOUDINARY_URL=
-  - CLIENT_DOMAIN=
+- create a .env file and add the environment variables as demonstrated in the .env.example file with your own value
 
-#### About the API (API Development)
+#### About the API 
 
 - GET '/api'
 
