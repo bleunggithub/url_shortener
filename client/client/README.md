@@ -16,7 +16,6 @@
 - type `cd url_shortener/client/siemens-client` to change into the front end directory and run `yarn` to install the dependencies
 - to start, run `yarn start` to run the app in development mode
 - the app should pop up on your browser, or if it hasn't, go to `http://localhost:3000/`
-- In the project directory, you can run:`yarn start`
 
 #### Environment Variables
 
